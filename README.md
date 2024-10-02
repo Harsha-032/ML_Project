@@ -12,5 +12,5 @@
 <img src="https://github.com/user-attachments/assets/ab3a74a9-1001-4ae4-be6c-74dd538b3e70">
 <img src="https://github.com/user-attachments/assets/bb0293af-4541-44ec-8925-edc6abf4e60a">
 
-<h3> Predictio Result </h3>
+<h3> Prediction Result </h3>
 <img src="https://github.com/user-attachments/assets/2f5db08a-3603-4b9e-bc83-91cf09478f0a">

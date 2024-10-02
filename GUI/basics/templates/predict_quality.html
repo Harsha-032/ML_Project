@@ -1,0 +1,120 @@
+<html>
+<head>
+    <title>Quality Prediction</title>
+    <style>
+        body {
+            background-image: url('https://static.vecteezy.com/system/resources/thumbnails/039/302/250/small_2x/ai-generated-back-to-school-science-lab-excitement-highlight-the-excitement-of-a-science-experiment-in-a-laboratory-setting-background-image-generative-ai-photo.jpg');
+            background-size: cover;
+            background-position: center;
+            width: 100%;
+            margin: 0;
+            padding: 20px;
+            font-family: Trebuchet MS, sans-serif;
+            color: #333;
+        }
+
+        h1 {
+            text-align: center; 
+            color: #07090a;
+            text-decoration: underline;
+            padding-bottom: 10px;
+            background-color: rgb(255, 255, 255);
+            padding: 5px 10px;
+            border-radius: 5px;
+            display: inline-block;
+            width: fit-content; 
+        }
+
+        form {
+            max-width: 500px;
+            margin: 0 auto;
+            background-color: rgba(255, 255, 255, 0.97);
+            padding: 20px;
+            border-radius: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        input,
+        input[type="submit"] {
+            width: calc(100% - 18px);
+            padding: 8px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            background-color: transparent;
+            padding-left: 10px;
+        }
+
+        input[type="submit"] {
+            background-color: #0066cc;
+            color: #fff;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #004080;
+        }
+        .logout-button {
+  background-color: #4CAF50; /* Green */
+  color: #ffffff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.logout-button:hover {
+  background-color: #3e8e41; /* Darker green on hover */
+}
+    </style>
+</head>
+<body>
+    <a href="{% url 'logout' %}" class="logout-button">Logout</a>
+        <h1>Wine Quality Prediction</h1>
+    <form action="{% url 'predict' %}" method="post"> 
+        {% csrf_token %}
+        <label for="textfixedacidity">Fixed acidity:</label>
+        <input class="input" id="textfixedacidity" type=" text" name="textfixedacidity" required> <br><br>
+        
+        <label for="textvolatileacidity">Volatile acidity:</label>
+        <input class="input" type=" text" name="textvolatileacidity" required> <br><br>
+        
+        <label for="textcitricacid">Citric acid:</label>
+        <input class="input" type=" text" name="textcitricacid" required><br><br>
+
+        <label for="textresidualsugar">Residual sugar:</label>
+        <input class="input" type=" text" name="textresidualsugar" required><br><br>
+
+        <label for="textchlorides">Chlorides:</label>
+        <input class="input" type=" text" name="textchlorides" required><br><br>
+
+        <label for="textfreesulfurdioxide">Free sulfur dioxide:</label>
+        <input class="input" type=" text" name="textfreesulfurdioxide" required><br><br>
+
+        <label for="texttotalsulfurdioxide">Total sulfur dioxide:</label>
+        <input class="input" type=" text" name="texttotalsulfurdioxide" required><br><br>
+
+        <label for="textdensity">Density:</label>
+        <input class="input" type=" text" name="textdensity" required><br><br>
+
+        <label for="textph">pH:</label>
+        <input class="input" type=" text" name="textph" required><br><br>
+
+        <label for="textsulphates">Sulphates:</label>
+        <input class="input" type=" text" name="textsulphates" required><br><br>
+
+        <label for="textalcohol">Alcohol:</label>
+        <input class="input" type=" text" name="textalcohol" required><br><br>
+
+        <input type="submit" name="inputsubmit" value="Predict">
+    </form>
+</body>
+</html>

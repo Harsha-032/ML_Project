@@ -1,0 +1,54 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prediction Result</title>
+    <style>
+        body {
+            background-image: url('https://static.vecteezy.com/system/resources/thumbnails/039/302/250/small_2x/ai-generated-back-to-school-science-lab-excitement-highlight-the-excitement-of-a-science-experiment-in-a-laboratory-setting-background-image-generative-ai-photo.jpg'); /* Replace with your image URL */
+            background-size: cover;
+            font-family: Trebuchet MS, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        h1 {
+            color: #333;
+            font-size: 28px;
+            text-align: center;
+            padding: 20px; 
+            background-color: rgba(255, 255, 255, 0.8); 
+            border-radius: 10px; 
+            margin-top: 0;
+        }
+
+        a {
+            color: #04060a;
+            text-decoration: none;
+        }
+        .logout-button {
+  background-color: #4CAF50; /* Green */
+  color: #ffffff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.logout-button:hover {
+  background-color: #3e8e41; /* Darker green on hover */
+}
+    </style>
+</head>
+<body>
+    <div>
+        <h1>{{ result }}</h1>
+        <p>
+            <a href="{% url 'predict' %}" class="logout-button">Go back to predict</a>
+        </p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,39 @@
+* {
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background:url('/static/img/para.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h4,h2,h3{
+    display: block;
+    font-size: 2em;
+    margin-top: 0.67em;
+    margin-bottom: 0.67em;
+    margin-left: 0;
+    margin-right: 0;
+    font-weight: bold ;
+    text-decoration: underline;
+    color: #fff;
+    text-align: center;
+    
+}
+
+
+div{
+    
+    /* padding: 100px 450px 50px 20px; */
+    display: block;
+    font-size: 2em;
+    margin-top: 100px;
+    margin-bottom: 0.67em;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: bold ;
+    color: rgb(75, 249, 234);
+    text-align: center;
+    
+}

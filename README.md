@@ -81,7 +81,7 @@ ML_Project/
 
 ## 📝 License
 
-This project is open source and available under the [MIT License](LICENSE) (add if applicable).
+This project is open source and available under the [MIT License](LICENSE).
 
 ## 🙋‍♂️ Author
 
